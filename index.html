@@ -194,7 +194,7 @@
                 <image href="images/logo-white.png" x="72" y="72" width="82" height="82" preserveAspectRatio="xMidYMid meet"/>
               </svg>
             </div>
-            <div style="display:none"><svg viewBox="0 0 360 400" xmlns="http://www.w3.org/2000/svg">
+            <div style="display:none" hidden><svg viewBox="0 0 360 400" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <radialGradient id="bg-grad" cx="50%" cy="100%" r="80%">
                   <stop offset="0%" stop-color="#003D3E"/>
@@ -400,33 +400,6 @@
               </text>
             </svg></div>
 
-            <!-- Spinning badge -->
-            <div class="badge-wrap" style="margin-top:24px">
-              <svg class="badge-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <path id="br-t" d="M 20,150 A 130,130 0 0,1 280,150"/>
-                  <path id="br-b" d="M 20,150 A 130,130 0 0,0 280,150"/>
-                </defs>
-                <circle cx="150" cy="150" r="142" fill="var(--teal)"/>
-                <circle cx="150" cy="150" r="130" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="1.5"/>
-                <!-- <image href="images/logo-white.png" x="96" y="96" width="108" height="108" preserveAspectRatio="xMidYMid meet"/> -->
-                <text font-family="'DM Sans',sans-serif" font-size="12.5" font-weight="800" fill="white" letter-spacing="5">
-                  <textPath href="#br-t" startOffset="6%">PRESSED TO PERFECTION</textPath>
-                </text>
-                <text font-family="'DM Sans',sans-serif" font-size="10.5" font-weight="700" fill="rgba(255,255,255,.78)" letter-spacing="3">
-                  <textPath href="#br-b" startOffset="4%">EURO STREET FOOD MADE WITH LOVE</textPath>
-                </text>
-                <path d="M 14,133 Q 6,150 14,167"  fill="none" stroke="rgba(255,255,255,.42)" stroke-width="2" stroke-linecap="round"/>
-                <path d="M 286,133 Q 294,150 286,167" fill="none" stroke="rgba(255,255,255,.42)" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <!-- Static wordmark over the spinning badge -->
-            <div class="story-wm">
-              <span class="wm-prs">PRS'D</span>
-              <span class="wm-with">WITH</span>
-              <div class="wm-hts" aria-hidden="true">♥ ♥ ♥</div>
-              <span class="wm-love">LOVE</span>
-            </div>
           </div>
 
         </div>
@@ -493,7 +466,10 @@
                 <g>
                   <animateMotion dur="5s" repeatCount="indefinite" rotate="auto"
                     path="M 189,136 Q 290,184 358,320"/>
-                  <text font-size="18" fill="white" dy="-2">✈</text>
+                  <g transform="translate(-10,-8) scale(0.9)">
+                    <path d="M18 3L20.5 8H24L22 11H19.5L21 18H18L14 11H9L10 14H7L5 11H2L3 8H6L8 3H11L10 6H14L15.5 3H18Z"
+                          fill="white" stroke="rgba(0,0,0,0.3)" stroke-width="0.5"/>
+                  </g>
                 </g>
               </svg>
               <!-- Badge overlaid on map — bottom-left corner -->
@@ -954,7 +930,11 @@
       <div class="footer-wm" aria-label="PRS'D With Love">
         <span class="fw fw-prs">PRS'D</span>
         <span class="fw fw-with">WITH</span>
-        <div class="footer-hearts" aria-hidden="true">♥ ♥ ♥</div>
+        <div class="footer-hearts" aria-hidden="true">
+          <svg width="20" height="18" viewBox="0 0 24 22" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5C12 20.5 1.5 13.2 1.5 7A5.5 5.5 0 0 1 12 4.16 5.5 5.5 0 0 1 22.5 7c0 6.2-10.5 13.5-10.5 13.5z"/></svg>
+          <svg width="20" height="18" viewBox="0 0 24 22" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5C12 20.5 1.5 13.2 1.5 7A5.5 5.5 0 0 1 12 4.16 5.5 5.5 0 0 1 22.5 7c0 6.2-10.5 13.5-10.5 13.5z"/></svg>
+          <svg width="20" height="18" viewBox="0 0 24 22" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5C12 20.5 1.5 13.2 1.5 7A5.5 5.5 0 0 1 12 4.16 5.5 5.5 0 0 1 22.5 7c0 6.2-10.5 13.5-10.5 13.5z"/></svg>
+        </div>
         <span class="fw fw-love">LOVE</span>
       </div>
 

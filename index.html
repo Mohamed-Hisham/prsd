@@ -466,9 +466,11 @@
                 <g>
                   <animateMotion dur="5s" repeatCount="indefinite" rotate="auto"
                     path="M 189,136 Q 290,184 358,320"/>
-                  <g transform="translate(-10,-8) scale(0.9)">
-                    <path d="M18 3L20.5 8H24L22 11H19.5L21 18H18L14 11H9L10 14H7L5 11H2L3 8H6L8 3H11L10 6H14L15.5 3H18Z"
-                          fill="white" stroke="rgba(0,0,0,0.3)" stroke-width="0.5"/>
+                  <!-- top-down plane pointing right (positive X = direction of travel) -->
+                  <g transform="translate(-10,-7)">
+                    <path d="M 20,7 L 8,14 L 10,7 L 8,0 Z" fill="white" opacity=".95"/>
+                    <path d="M 13,7 L 6,2 L 6,12 Z" fill="white" opacity=".85"/>
+                    <path d="M 5,7 L 0,4 L 0,10 Z" fill="white" opacity=".7"/>
                   </g>
                 </g>
               </svg>

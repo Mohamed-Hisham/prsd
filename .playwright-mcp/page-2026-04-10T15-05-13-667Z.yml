@@ -1,0 +1,377 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - navigation "Main navigation" [ref=e3]:
+    - generic [ref=e4]:
+      - link "PRS'D — Go to top" [ref=e5] [cursor=pointer]:
+        - /url: "#hero"
+        - img [ref=e6]
+        - generic [ref=e7]: PRS'D
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Story" [ref=e10] [cursor=pointer]:
+            - /url: "#story"
+        - listitem [ref=e11]:
+          - link "Journey" [ref=e12] [cursor=pointer]:
+            - /url: "#concept"
+        - listitem [ref=e13]:
+          - link "Menu" [ref=e14] [cursor=pointer]:
+            - /url: "#menu"
+        - listitem [ref=e15]:
+          - link "Events" [ref=e16] [cursor=pointer]:
+            - /url: "#events"
+        - listitem [ref=e17]:
+          - link "Find Us" [ref=e18] [cursor=pointer]:
+            - /url: "#findus"
+      - generic [ref=e19]:
+        - group "Select language" [ref=e20]:
+          - button "EN" [pressed] [ref=e21] [cursor=pointer]
+          - button "ع" [ref=e22] [cursor=pointer]
+          - button "FR" [ref=e23] [cursor=pointer]
+        - link "DM to Order" [ref=e24] [cursor=pointer]:
+          - /url: https://ig.me/m/prsd_eg
+  - main [ref=e25]:
+    - region "PRESSED TO PERFECTION" [ref=e26]:
+      - generic [ref=e28]:
+        - img "PRS'D circular stamp logo" [ref=e29]:
+          - img [ref=e30]:
+            - generic [ref=e34]: PRESSED TO PERFECTION •
+            - generic [ref=e35]: EURO STREET FOOD • MADE WITH LOVE •
+        - heading "PRESSED TO PERFECTION" [level=1] [ref=e39]:
+          - text: PRESSED TO
+          - text: PERFECTION
+        - paragraph [ref=e40]: Euro-Street Food Made with Love
+        - generic [ref=e41]:
+          - link "✦ Explore Menu" [ref=e42] [cursor=pointer]:
+            - /url: "#menu"
+          - link "Our Story ↓" [ref=e43] [cursor=pointer]:
+            - /url: "#story"
+      - generic:
+        - img:
+          - generic: PRS'D
+          - generic: WITH
+          - generic: L
+          - generic: VE
+      - generic:
+        - img:
+          - generic: PRS'D
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - img [ref=e48]
+          - generic [ref=e50]: Fly to Flavour
+        - generic [ref=e51]: ·
+        - generic [ref=e52]:
+          - img [ref=e54]
+          - generic [ref=e57]: Pack a Taste
+        - generic [ref=e58]: ·
+        - generic [ref=e59]:
+          - img [ref=e61]
+          - generic [ref=e66]: Road Trip Eats
+        - generic [ref=e67]: ·
+        - generic [ref=e68]:
+          - img [ref=e70]
+          - generic [ref=e74]: Set Sail
+        - generic [ref=e75]: ·
+        - generic [ref=e76]:
+          - img [ref=e78]
+          - generic [ref=e80]: Map Your Meal
+        - generic [ref=e81]: ·
+        - generic [ref=e82]:
+          - img [ref=e84]
+          - generic [ref=e89]: Stamp & Savour
+        - generic [ref=e90]: ·
+        - generic [ref=e91]:
+          - img [ref=e93]
+          - generic [ref=e95]: Fly to Flavour
+        - generic [ref=e96]: ·
+        - generic [ref=e97]:
+          - img [ref=e99]
+          - generic [ref=e102]: Pack a Taste
+        - generic [ref=e103]: ·
+        - generic [ref=e104]:
+          - img [ref=e106]
+          - generic [ref=e111]: Road Trip Eats
+        - generic [ref=e112]: ·
+        - generic [ref=e113]:
+          - img [ref=e115]
+          - generic [ref=e119]: Set Sail
+        - generic [ref=e120]: ·
+        - generic [ref=e121]:
+          - img [ref=e123]
+          - generic [ref=e125]: Map Your Meal
+        - generic [ref=e126]: ·
+        - generic [ref=e127]:
+          - img [ref=e129]
+          - generic [ref=e134]: Stamp & Savour
+        - generic [ref=e135]: ·
+    - region "THE FAMILY BEHIND THE FLAVOUR" [ref=e136]:
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]: Since 2025
+          - heading "THE FAMILY BEHIND THE FLAVOUR" [level=2] [ref=e141]:
+            - text: THE FAMILY
+            - text: BEHIND THE
+            - text: FLAVOUR
+          - paragraph [ref=e142]: PRS'D was born from a simple love — for Europe's best street food, for family, and for pressing every bite to perfection. We're Maha, Omar & Mostafa, and this is our love letter to the cobblestone streets, the waffle stalls, and the hidden gems of Europe.
+          - generic "Founding family members" [ref=e143]:
+            - generic [ref=e144]:
+              - generic [ref=e145]: ♥
+              - generic [ref=e146]: Maha
+            - generic [ref=e147]:
+              - generic [ref=e148]: ♥
+              - generic [ref=e149]: Omar
+            - generic [ref=e150]:
+              - generic [ref=e151]: ♥
+              - generic [ref=e152]: Mostafa
+        - generic:
+          - img:
+            - generic: ARTISAN
+        - generic [ref=e153]:
+          - img [ref=e155]:
+            - generic [ref=e159]: PRESSED TO PERFECTION
+            - generic [ref=e160]: EURO STREET FOOD MADE WITH LOVE
+          - generic:
+            - generic: PRS'D
+            - generic: WITH
+            - generic: ♥ ♥ ♥
+            - generic: LOVE
+    - region "YOUR EURO TRIP ON A PLATE" [ref=e163]:
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - generic [ref=e166]: The Concept
+          - heading "YOUR EURO TRIP ON A PLATE" [level=2] [ref=e167]
+          - paragraph [ref=e168]: Each dish is a culinary stamp from a new destination
+        - generic [ref=e169]:
+          - img "Flight route from Belgium to Egypt" [ref=e171]:
+            - generic [ref=e172]:
+              - generic [ref=e188]: BELGIUM
+              - generic [ref=e191]: EGYPT
+              - generic [ref=e192]: ✈
+              - generic [ref=e200]: PRESSED TO PERFECTION
+              - generic [ref=e201]: EURO STREET FOOD MADE WITH LOVE
+              - generic [ref=e206]: PRS'D
+          - generic [ref=e207]:
+            - img "PRS'D postcard concept" [ref=e208]:
+              - generic [ref=e209]:
+                - generic [ref=e210]: PRS'D
+                - generic [ref=e211]:
+                  - text: EURO
+                  - text: TRIP
+              - generic [ref=e219]: 📮
+            - list "Euro-trip concept icons" [ref=e220]:
+              - listitem [ref=e221]:
+                - img [ref=e223]
+                - generic [ref=e227]: Fly In
+              - listitem [ref=e228]:
+                - img [ref=e230]
+                - generic [ref=e234]: Pack It
+              - listitem [ref=e235]:
+                - img [ref=e237]
+                - generic [ref=e244]: Drive Thru
+              - listitem [ref=e245]:
+                - img [ref=e247]
+                - generic [ref=e251]: Set Sail
+              - listitem [ref=e252]:
+                - img [ref=e254]
+                - generic [ref=e258]: Map It
+              - listitem [ref=e259]:
+                - img [ref=e261]
+                - generic [ref=e268]: Stamp It
+    - region "THE WAFFLE MENU" [ref=e269]:
+      - generic:
+        - img:
+          - generic: PRESSED TO PERFECTION
+          - generic: EURO STREET FOOD • WITH LOVE
+          - generic: PRS'D
+      - generic "24-48 hours delivery time" [ref=e270]:
+        - generic [ref=e271]:
+          - img [ref=e272]
+          - generic [ref=e275]: 24–48 hrs Delivery Time
+          - generic [ref=e276]: ·
+          - generic [ref=e277]: Orders in boxes of 6 or 12
+          - generic [ref=e278]: ·
+          - generic [ref=e279]: 🇧🇪 Authentic Liège
+      - generic [ref=e280]:
+        - generic [ref=e281]:
+          - generic [ref=e282]: Our Waffles
+          - heading "THE WAFFLE MENU" [level=2] [ref=e283]
+          - paragraph [ref=e284]: Pressed in Belgium, delivered with love — choose your style
+        - tablist "Waffle categories" [ref=e285]:
+          - tab "All" [selected] [ref=e286] [cursor=pointer]
+          - tab "Authentic" [ref=e287] [cursor=pointer]
+          - tab "Cocoa" [ref=e288] [cursor=pointer]
+          - tab "Lactose Free" [ref=e289] [cursor=pointer]
+          - tab "Savoury" [ref=e290] [cursor=pointer]
+        - generic [ref=e291]:
+          - article "Authentic Liège Waffles" [ref=e292]:
+            - generic [ref=e293]:
+              - generic [ref=e294]: Authentic
+              - img [ref=e296]
+              - generic "Belgium" [ref=e301]: 🇧🇪
+            - generic [ref=e302]:
+              - heading "Authentic Liège Waffles" [level=3] [ref=e303]
+              - list "Variants" [ref=e304]:
+                - listitem [ref=e305]:
+                  - generic [ref=e307]: Classic Liège Plain
+                - listitem [ref=e308]:
+                  - generic [ref=e310]: Classic Liège with Dark Chocolate
+              - generic [ref=e311]:
+                - generic [ref=e312]: ★ Best Seller
+                - link "Order on Instagram" [ref=e313] [cursor=pointer]:
+                  - /url: https://ig.me/m/prsd_eg
+                  - text: Order →
+          - article "Cocoa Liège Waffles" [ref=e314]:
+            - generic [ref=e315]:
+              - generic [ref=e316]: Cocoa
+              - img [ref=e318]
+              - generic "Belgium" [ref=e324]: 🇧🇪
+            - generic [ref=e325]:
+              - heading "Cocoa Liège Waffles" [level=3] [ref=e326]
+              - list "Variants" [ref=e327]:
+                - listitem [ref=e328]:
+                  - generic [ref=e330]: Cocoa Liège Plain
+                - listitem [ref=e331]:
+                  - generic [ref=e333]: Cocoa Liège with Dark Chocolate
+              - generic [ref=e334]:
+                - generic [ref=e335]: ♥ Fan Fave
+                - link "Order on Instagram" [ref=e336] [cursor=pointer]:
+                  - /url: https://ig.me/m/prsd_eg
+                  - text: Order →
+          - article "Lactose Free Liège Waffles" [ref=e337]:
+            - generic [ref=e338]:
+              - generic [ref=e339]: Lactose Free
+              - img [ref=e341]
+              - generic "Belgium" [ref=e347]: 🇧🇪
+            - generic [ref=e348]:
+              - heading "Lactose Free Liège Waffles" [level=3] [ref=e349]
+              - paragraph [ref=e350]: Minimum order of 12
+              - list "Variants" [ref=e351]:
+                - listitem [ref=e352]:
+                  - generic [ref=e354]: LF Liège Plain
+                - listitem [ref=e355]:
+                  - generic [ref=e357]: LF Liège with Dark Chocolate
+              - generic [ref=e358]:
+                - generic [ref=e359]: ✦ Lactose Free
+                - link "Order on Instagram" [ref=e360] [cursor=pointer]:
+                  - /url: https://ig.me/m/prsd_eg
+                  - text: Order →
+          - article "Savoury Liège Waffles" [ref=e361]:
+            - generic [ref=e362]:
+              - generic [ref=e363]: Savoury
+              - img [ref=e365]
+              - generic "Belgium" [ref=e372]: 🇧🇪
+            - generic [ref=e373]:
+              - heading "Savoury Liège Waffles" [level=3] [ref=e374]
+              - paragraph [ref=e375]: Minimum order of 6
+              - list "Variants" [ref=e376]:
+                - listitem [ref=e377]:
+                  - generic [ref=e379]: Savoury Liège Plain
+              - generic [ref=e380]:
+                - generic [ref=e381]: ⚡ Savoury
+                - link "Order on Instagram" [ref=e382] [cursor=pointer]:
+                  - /url: https://ig.me/m/prsd_eg
+                  - text: Order →
+        - generic [ref=e383]:
+          - generic [ref=e384]: Add-ons per waffle
+          - generic [ref=e386]: 🍒 Cranberries
+        - link "Order on Instagram" [ref=e388] [cursor=pointer]:
+          - /url: https://ig.me/m/prsd_eg
+    - region "WHAT'S ON @ PRS'D" [ref=e389]:
+      - generic:
+        - img:
+          - generic: PRESSED TO PERFECTION
+          - generic: EURO STREET FOOD MADE WITH LOVE
+          - generic: PRS'D
+      - generic [ref=e390]:
+        - generic [ref=e391]:
+          - generic [ref=e392]: Follow the Feed
+          - heading "WHAT'S ON @ PRS'D" [level=2] [ref=e393]
+          - generic [ref=e394]: Catch us live — pop-ups, markets & waffle moments
+        - generic [ref=e395]:
+          - article [ref=e396]:
+            - generic [ref=e397]: Upcoming
+            - heading "Weekend Waffle Pop-Up" [level=3] [ref=e398]
+            - paragraph [ref=e399]: Find us at the Cairo Food District market this Friday. Fresh-pressed Liège waffles, made to order. 24-48hr pre-orders open via Instagram DM.
+            - generic [ref=e400]:
+              - img [ref=e401]
+              - text: Pop-Up Market
+          - article [ref=e403]:
+            - generic [ref=e404]: Every Week
+            - heading "Order Window Open" [level=3] [ref=e405]
+            - paragraph [ref=e406]: DM us on Instagram to place your weekly order. Boxes of 6 or 12. Classic, Cocoa, Lactose Free & Savoury — all pressed to perfection.
+            - generic [ref=e407]:
+              - img [ref=e408]
+              - text: Order on Instagram
+          - article [ref=e410]:
+            - generic [ref=e411]: Special Edition
+            - heading "Gift Box Season" [level=3] [ref=e412]
+            - paragraph [ref=e413]: Send a box of waffles as a gift. Matched or mismatched boxes of 6 or 12, beautifully packaged with love from Belgium to Egypt.
+            - generic [ref=e414]:
+              - img [ref=e415]
+              - text: Gift Box
+        - generic [ref=e420]:
+          - generic [ref=e421]: Follow @prsd_eg for live updates & order windows
+          - link "Follow @prsd_eg" [ref=e422] [cursor=pointer]:
+            - /url: https://www.instagram.com/prsd_eg/
+            - img [ref=e423]
+            - text: Follow @prsd_eg
+    - region "STAMP YOUR PASSPORT" [ref=e425]:
+      - generic [ref=e427]:
+        - generic [ref=e428]:
+          - generic [ref=e429]: Come Visit
+          - heading "STAMP YOUR PASSPORT" [level=2] [ref=e430]:
+            - text: STAMP YOUR
+            - text: PASSPORT
+          - generic [ref=e431]:
+            - generic [ref=e432]:
+              - generic [ref=e433]: 📍
+              - generic [ref=e434]:
+                - strong [ref=e435]: Location
+                - paragraph [ref=e436]:
+                  - text: Cairo Food District, Egypt
+                  - text: Find us at the best local markets
+            - generic [ref=e437]:
+              - generic [ref=e438]: ⏰
+              - generic [ref=e439]:
+                - strong [ref=e440]: Opening Hours
+                - paragraph [ref=e441]:
+                  - text: "Sun–Thu: 12:00 – 22:00"
+                  - text: "Fri–Sat: 12:00 – 00:00"
+            - generic [ref=e442]:
+              - generic [ref=e443]: 📞
+              - generic [ref=e444]:
+                - strong [ref=e445]: Get in Touch
+                - paragraph [ref=e446]:
+                  - text: "@prsd_eg on Instagram"
+                  - text: DM us to order
+          - generic [ref=e447]:
+            - link "Get Directions →" [ref=e448] [cursor=pointer]:
+              - /url: https://maps.google.com
+            - link "DM to Order ✦" [ref=e449] [cursor=pointer]:
+              - /url: https://ig.me/m/prsd_eg
+        - img "Map showing PRS'D location in Cairo, Egypt" [ref=e450]:
+          - generic [ref=e451]: 📍
+          - paragraph [ref=e452]: We're Here!
+          - paragraph [ref=e453]: Cairo Food District, Egypt
+  - contentinfo [ref=e454]:
+    - generic [ref=e455]:
+      - generic "PRS'D With Love" [ref=e456]:
+        - generic [ref=e457]: PRS'D
+        - generic [ref=e458]: WITH
+        - generic [ref=e459]: ♥ ♥ ♥
+        - generic [ref=e460]: LOVE
+      - paragraph [ref=e461]: Euro-Street Food Made with Love · Cairo, Egypt
+      - generic "Follow us on social media" [ref=e462]:
+        - link "Instagram @prsd_eg" [ref=e463] [cursor=pointer]:
+          - /url: https://www.instagram.com/prsd_eg/
+          - img [ref=e464]
+        - link "TikTok" [ref=e467] [cursor=pointer]:
+          - /url: https://ig.me/m/prsd_eg
+          - img [ref=e468]
+        - link "Facebook" [ref=e470] [cursor=pointer]:
+          - /url: https://www.instagram.com/prsd_eg/
+          - img [ref=e471]
+        - link "WhatsApp" [ref=e473] [cursor=pointer]:
+          - /url: https://ig.me/m/prsd_eg
+          - img [ref=e474]
+      - paragraph [ref=e477]: © 2025 PRS'D · All rights reserved · Made with ♥ in Egypt

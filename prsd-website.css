@@ -843,6 +843,7 @@ ul { list-style: none; }
   .concept-grid { grid-template-columns: 1fr; gap: 40px; }
   .findus-grid  { grid-template-columns: 1fr; gap: 40px; }
   .map-frame    { min-height: 250px; }
+  .story-wm     { top: 50%; left: 50%; }
 }
 
 @media (max-width: 768px) {

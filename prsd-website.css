@@ -760,6 +760,30 @@ ul { list-style: none; }
 }
 .map-pin-group { animation: pinDrop .9s cubic-bezier(.34,1.56,.64,1) .3s both; }
 
+/* Custom teal pulsating pin overlay on OSM iframe */
+.map-custom-pin {
+  position: absolute; z-index: 2; pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+.map-custom-pin__dot {
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--teal); border: 3px solid white;
+  box-shadow: 0 2px 10px rgba(0,0,0,.35);
+  position: relative; z-index: 1;
+}
+.map-custom-pin__ring {
+  position: absolute; top: 50%; left: 50%;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--teal); opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: osmPinPulse 2.2s ease-out infinite;
+}
+.map-custom-pin__ring:nth-child(2) { animation-delay: .9s; }
+@keyframes osmPinPulse {
+  0%   { transform: translate(-50%,-50%) scale(1); opacity: .65; }
+  100% { transform: translate(-50%,-50%) scale(3.5); opacity: 0; }
+}
+
 /* info chip at bottom */
 .map-info-chip {
   position: absolute; bottom: 18px; left: 50%; transform: translateX(-50%);
@@ -768,6 +792,7 @@ ul { list-style: none; }
   display: flex; align-items: center; gap: 10px;
   box-shadow: 0 4px 22px rgba(0,56,60,.16);
   white-space: nowrap; pointer-events: none;
+  z-index: 2;
 }
 .map-chip-dot {
   width: 10px; height: 10px; border-radius: 50%;

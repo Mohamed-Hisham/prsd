@@ -900,7 +900,7 @@
 
           <div class="map-frame reveal" aria-label="Map showing PRS'D location in 6th of October City, Giza" style="position:relative;">
             <iframe
-              src="https://www.openstreetmap.org/export/embed.html?bbox=30.2%2C29.65%2C31.5%2C30.35&amp;layer=mapnik&amp;marker=29.967%2C30.967"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=30.2%2C29.65%2C31.5%2C30.35&amp;layer=mapnik"
               style="width:100%;height:100%;border:0;display:block;min-height:380px;pointer-events:none;"
               title="PRS'D location — 6th of October City, Giza"
               loading="lazy"
@@ -909,6 +909,13 @@
             ></iframe>
             <!-- Interaction blocker — keeps map as pure display, no pan/zoom/click -->
             <div style="position:absolute;inset:0;z-index:1;cursor:default;" aria-hidden="true"></div>
+            <!-- Custom teal pulsating pin — 29.967°N 30.967°E within bbox 30.2–31.5°E / 29.65–30.35°N -->
+            <!-- left=(30.967-30.2)/(31.5-30.2)=59%  top=(30.35-29.967)/(30.35-29.65)=55% -->
+            <div class="map-custom-pin" style="left:59%;top:55%;" aria-hidden="true">
+              <div class="map-custom-pin__ring"></div>
+              <div class="map-custom-pin__ring"></div>
+              <div class="map-custom-pin__dot"></div>
+            </div>
 
             <!-- info chip overlay -->
             <div class="map-info-chip">

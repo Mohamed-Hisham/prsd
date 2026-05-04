@@ -1220,13 +1220,125 @@ body{
 @keyframes tl4{ 0%,59.4%{transform:translateX(-100%)} 81.3%{transform:translateX(0)} 100%{transform:translateX(0)} }
 @keyframes tl5{ 0%,81.3%{transform:translateX(-100%)} 100%{transform:translateX(0)} }
 
-@media (max-width: 700px){
-  .title-scene, .mixing-top, .cart-scene, .box-scene, .dm-scene{
-    transform: scale(0.65);
+/* ════════════════════════════════════════════════ */
+/* RESPONSIVE — TABLET & MOBILE                     */
+/* ════════════════════════════════════════════════ */
+
+/*
+  Strategy:
+  • On portrait orientation, the film fills the full viewport (no 16:9 letterbox).
+  • Inner scenes are scaled down via transform: scale() so the same pixel-precise
+    artwork fits on smaller widths.
+  • Act 5 (DM order) switches to a vertical stacked layout on portrait.
+  • HUD and tagline shrink/hide on the smallest screens.
+*/
+
+/* PORTRAIT — let film fill the screen instead of forcing 16:9 letterboxing */
+@media (orientation: portrait){
+  .film{
+    width: 100vw;
+    height: 100vh;
   }
-  .hud-text{font-size:12px}
-  .hud-tagline{font-size:8px}
-  .dm-title{font-size:32px}
+}
+
+/* TABLET PORTRAIT — 600px to 900px wide */
+@media (orientation: portrait) and (max-width: 900px){
+  /* Each scene's inner container scales to fit available width (~720px native → ~80% on iPad) */
+  .title-scene{ transform: scale(0.85); }
+  .mixing-top{ transform: scale(0.85); }
+  .cart-scene{ transform: scale(0.78); }
+  .box-scene{ transform: scale(0.85); }
+
+  /* Slightly smaller HUD */
+  .hud-top{ top:18px; left:20px; }
+  .hud-logo{ width:34px; height:34px; }
+  .hud-text{ font-size:13px; }
+  .hud-tagline{ top:24px; right:20px; font-size:9px; letter-spacing:0.25em; }
+}
+
+/* MOBILE PORTRAIT — under 600px wide */
+@media (orientation: portrait) and (max-width: 600px){
+  /* Aggressive scaling so scenes fit narrow phone widths */
+  .title-scene{ transform: scale(0.62); }
+  .mixing-top{ transform: scale(0.65); }
+  .cart-scene{ transform: scale(0.55); }
+  .box-scene{ transform: scale(0.62); }
+
+  /* HUD shrinks further; tagline hides on tiniest screens */
+  .hud-top{ top:14px; left:14px; gap:8px; }
+  .hud-logo{ width:28px; height:28px; }
+  .hud-text{ font-size:11px; letter-spacing:0.15em; }
+  .hud-tagline{ display:none; }
+
+  /* Timeline gets smaller and tucks at the very bottom */
+  .timeline{ bottom:10px; padding:5px 8px; gap:4px; }
+  .tl-dot{ width:18px; height:2px; }
+
+  /* Act 5 — stack vertically on mobile portrait */
+  .dm-scene{
+    width: 92vw;
+    max-width: 420px;
+    height: auto;
+    gap: 18px;
+    padding: 20px 0;
+  }
+  .dm-logo{ width:80px; height:80px; }
+  .dm-eyebrow{ font-size:10px; letter-spacing:0.4em; }
+  .dm-title{ font-size: clamp(28px, 9vw, 40px); letter-spacing:0.06em; }
+  .dm-info{
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .qr-wrap{ width:150px; height:150px; }
+  .qr-label{ font-size:8px; padding:2px 8px; }
+  .ig-block{ align-items:center; }
+  .ig-handle{ padding:10px 16px; gap:10px; }
+  .ig-icon{ width:32px; height:32px; }
+  .ig-icon svg{ width:18px; height:18px; }
+  .ig-handle-name{ font-size:16px; }
+  .ig-handle-url{ font-size:9px; }
+  .cta-button{ font-size:12px; padding:10px 20px; letter-spacing:0.18em; }
+  .dm-foot{
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:8px;
+    padding: 0 16px;
+    text-align:center;
+  }
+  .dm-foot-text{ font-size:9px; letter-spacing:0.25em; }
+
+  /* Hide some sparkles on mobile (less visual noise on small canvas) */
+  .sp:nth-child(2),
+  .sp:nth-child(4),
+  .sp:nth-child(7){ display:none; }
+}
+
+/* VERY SMALL PHONES — under 380px (iPhone SE etc.) */
+@media (orientation: portrait) and (max-width: 380px){
+  .title-scene{ transform: scale(0.55); }
+  .mixing-top{ transform: scale(0.58); }
+  .cart-scene{ transform: scale(0.48); }
+  .box-scene{ transform: scale(0.55); }
+
+  .dm-scene{ gap:14px; padding:14px 0; }
+  .dm-logo{ width:70px; height:70px; }
+  .dm-title{ font-size: clamp(24px, 8.5vw, 34px); }
+  .qr-wrap{ width:130px; height:130px; }
+}
+
+/* LANDSCAPE PHONE / SHORT VIEWPORTS — keep 16:9 but scale content */
+@media (orientation: landscape) and (max-height: 500px){
+  .title-scene{ transform: scale(0.7); }
+  .mixing-top{ transform: scale(0.7); }
+  .cart-scene{ transform: scale(0.65); }
+  .box-scene{ transform: scale(0.7); }
+  .dm-scene{ transform: scale(0.78); }
+
+  .hud-top{ top:12px; left:14px; }
+  .hud-logo{ width:30px; height:30px; }
+  .hud-text{ font-size:11px; }
+  .hud-tagline{ top:16px; right:14px; font-size:8px; }
 }
 
 </style>

@@ -874,6 +874,8 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }
   .nav-ham { display: flex; }
+  /* shrink map badge so route is not obscured on small screens */
+  .map-wrap [style*="position:absolute"][style*="bottom:14px"] { width: 72px !important; height: 72px !important; }
 
   .hero-hl { font-size: clamp(2.9rem, 13vw, 5rem); }
   .waffle-grid { grid-template-columns: 1fr; max-width: 400px; margin-inline: auto; }

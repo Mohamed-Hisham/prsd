@@ -432,45 +432,50 @@
                    viewBox="0 0 480 360" preserveAspectRatio="xMidYMid slice"
                    xmlns="http://www.w3.org/2000/svg">
                 <!-- Subtle vignette for legibility -->
-                <rect width="480" height="360" fill="rgba(0,0,0,.15)" rx="0"/>
-                <!-- Route glow -->
+                <rect width="480" height="360" fill="rgba(0,0,0,.18)" rx="0"/>
+                <!-- Route glow — non-scaling so always thick -->
                 <path d="M 189,136 Q 290,184 358,320"
-                      fill="none" stroke="white" stroke-width="7" opacity=".08"/>
-                <!-- Dashed flight path -->
+                      fill="none" stroke="white" stroke-width="18" opacity=".12"
+                      vector-effect="non-scaling-stroke"/>
+                <!-- Dashed flight path — non-scaling stroke -->
                 <path d="M 189,136 Q 290,184 358,320"
-                      fill="none" stroke="white" stroke-width="2.5"
-                      stroke-dasharray="8,5" opacity=".95"/>
+                      fill="none" stroke="white" stroke-width="3.5"
+                      stroke-dasharray="14,7" opacity=".98"
+                      vector-effect="non-scaling-stroke"/>
                 <!-- Belgium pin -->
-                <circle cx="189" cy="136" r="9" fill="#FFD560" opacity=".2"/>
-                <circle cx="189" cy="136" r="5" fill="#FFD560"/>
-                <circle cx="189" cy="136" r="5" fill="none" stroke="#FFD560" stroke-width="2.5">
-                  <animate attributeName="r" values="5;20;5" dur="2.6s" repeatCount="indefinite"/>
+                <circle cx="189" cy="136" r="12" fill="#FFD560" opacity=".25"
+                        vector-effect="non-scaling-stroke"/>
+                <circle cx="189" cy="136" r="7" fill="#FFD560"/>
+                <circle cx="189" cy="136" r="7" fill="none" stroke="#FFD560" stroke-width="2"
+                        vector-effect="non-scaling-stroke">
+                  <animate attributeName="r" values="7;26;7" dur="2.6s" repeatCount="indefinite"/>
                   <animate attributeName="opacity" values=".8;0;.8" dur="2.6s" repeatCount="indefinite"/>
                 </circle>
-                <text x="189" y="123" text-anchor="middle"
-                  font-family="'DM Sans',sans-serif" font-size="11" font-weight="900"
-                  fill="white" stroke="rgba(0,0,0,.8)" stroke-width="3" paint-order="stroke"
+                <text x="189" y="118" text-anchor="middle"
+                  font-family="'DM Sans',sans-serif" font-size="13" font-weight="900"
+                  fill="white" stroke="rgba(0,0,0,.9)" stroke-width="4" paint-order="stroke"
                   letter-spacing="2">BELGIUM</text>
                 <!-- Cairo pin -->
-                <circle cx="358" cy="320" r="9" fill="#FFD560" opacity=".2"/>
-                <circle cx="358" cy="320" r="5" fill="#FFD560"/>
-                <circle cx="358" cy="320" r="5" fill="none" stroke="#FFD560" stroke-width="2.5">
-                  <animate attributeName="r" values="5;20;5" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+                <circle cx="358" cy="320" r="12" fill="#FFD560" opacity=".25"
+                        vector-effect="non-scaling-stroke"/>
+                <circle cx="358" cy="320" r="7" fill="#FFD560"/>
+                <circle cx="358" cy="320" r="7" fill="none" stroke="#FFD560" stroke-width="2"
+                        vector-effect="non-scaling-stroke">
+                  <animate attributeName="r" values="7;26;7" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
                   <animate attributeName="opacity" values=".8;0;.8" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
                 </circle>
-                <text x="358" y="307" text-anchor="middle"
-                  font-family="'DM Sans',sans-serif" font-size="11" font-weight="900"
-                  fill="white" stroke="rgba(0,0,0,.8)" stroke-width="3" paint-order="stroke"
+                <text x="358" y="304" text-anchor="middle"
+                  font-family="'DM Sans',sans-serif" font-size="13" font-weight="900"
+                  fill="white" stroke="rgba(0,0,0,.9)" stroke-width="4" paint-order="stroke"
                   letter-spacing="2">CAIRO</text>
-                <!-- Animated plane -->
+                <!-- Animated plane — bigger, non-scaling -->
                 <g>
                   <animateMotion dur="5s" repeatCount="indefinite" rotate="auto"
                     path="M 189,136 Q 290,184 358,320"/>
-                  <!-- top-down plane pointing right (positive X = direction of travel) -->
-                  <g transform="translate(-10,-7)">
-                    <path d="M 20,7 L 8,14 L 10,7 L 8,0 Z" fill="white" opacity=".95"/>
-                    <path d="M 13,7 L 6,2 L 6,12 Z" fill="white" opacity=".85"/>
-                    <path d="M 5,7 L 0,4 L 0,10 Z" fill="white" opacity=".7"/>
+                  <g transform="translate(-14,-10)">
+                    <path d="M 28,10 L 10,19 L 13,10 L 10,1 Z" fill="white" opacity=".98"/>
+                    <path d="M 18,10 L 8,3 L 8,17 Z" fill="white" opacity=".88"/>
+                    <path d="M 7,10 L 0,6 L 0,14 Z" fill="white" opacity=".72"/>
                   </g>
                 </g>
               </svg>

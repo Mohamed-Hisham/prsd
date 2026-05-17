@@ -320,3 +320,21 @@ document.querySelectorAll('.mtab').forEach(btn => {
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
 }
+
+/* ══════════════════════════════════════════════════════════════
+   GOOGLE ANALYTICS — Event Tracking
+══════════════════════════════════════════════════════════════ */
+document.addEventListener('click', function (e) {
+  const el = e.target.closest('[data-ga-location], [data-ga-waffle]');
+  if (!el || typeof gtag === 'undefined') return;
+
+  if (el.dataset.gaWaffle) {
+    gtag('event', 'waffle_order_click', {
+      waffle_name: el.dataset.gaWaffle
+    });
+  } else if (el.dataset.gaLocation) {
+    gtag('event', 'order_cta_click', {
+      button_location: el.dataset.gaLocation
+    });
+  }
+});
